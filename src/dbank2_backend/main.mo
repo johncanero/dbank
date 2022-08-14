@@ -20,7 +20,6 @@ actor DBank {
  Debug.print(debug_show(id));
  //Debug.print(debug_show(currentValue));
 
- 
 
 // 3. Create a public (func)function named topUp 
  public func topUp(amount: Float) {
