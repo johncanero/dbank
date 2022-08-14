@@ -8,10 +8,11 @@ import Float "mo:base/Float";
 actor DBank {
   stable var currentValue: Float= 300;
   currentValue := 300;
+  Debug.print(debug_show(currentValue));
 
   // 6. Create a const called startTime. Debug print the current time in nanoseconds into the console. 
   stable var startTime = Time.now();
-  // startTime := Time.now();
+  startTime := Time.now();
   Debug.print(debug_show(startTime));
 
 
@@ -33,7 +34,7 @@ actor DBank {
 
 // 4. Create a public (func)function named withdraw that allow users to withdraw an amount from the current Value
 // Decrease the currentValue by the amount
-public func withdrwal(amount : Float) {
+public func withdraw(amount : Float) {
 let tempValue: Float = currentValue - amount;
   if(tempValue >= 0) {
   currentValue -= amount;
